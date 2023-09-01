@@ -92,4 +92,55 @@ ul li a {
   padding: 35px 24px 0 0;
 }
 
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
 
+  .pcNavContainer {
+    display: flex;
+    
+  }
+  .pcNav {
+    display: flex;
+    z-index: 1;
+  }
+  .pcNav li {
+    list-style: none;
+    margin: 0 18px;
+    padding-bottom: 27px;
+    padding-top: 15px;
+  }
+  .pcNav li:first-child {
+    border-bottom: 2px white solid;
+  }
+
+  .pcNavBackground {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+    height: 9%;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media(min-width:1024px){
+.pcNavBackground{
+  height: 13%;
+  top: 6%;
+}
+.pcNav{
+  padding-right: 200px;
+}
+.pcNav li{
+    margin: 0 25px;
+}
+.nav{
+  padding: 64px 55px ;
+}
+}
