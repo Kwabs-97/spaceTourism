@@ -19,7 +19,7 @@ function Destination() {
         <div className={styles.imgContainer}>
           <img src={planetIMG} alt="planetIMG" width={170} height={170} />
         </div>
-        <section>
+        <section className={styles.about}>
           <div className={styles.linksContainer}>
             <ul className={styles.links}>
               <li>
@@ -45,18 +45,19 @@ function Destination() {
           </div>
           <div className={styles.planetDescription}>
             <p>
-              color: #D0D6F9; text-align: center; font-family: Barlow; font-size: 15px; font-style:
-              normal; font-weight: 400; line-height: 25px; /* 166.667% */
+              See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+              regain perspective and come back refreshed. While you’re there, take in some history
+              by visiting the Luna 2 and Apollo 11 landing sites.
             </p>
           </div>
         </section>
         <div className={styles.divider}></div>
         <footer className={styles.footer}>
-          <div>
+          <div className={styles.avgDistance}>
             <span>AVG. DISTANCE</span>
             <h3>384,400 KM</h3>
           </div>
-          <div>
+          <div className={styles.estTime}>
             <span>EST. TRAVEL TIME</span>
             <h3>3 DAYS</h3>
           </div>
