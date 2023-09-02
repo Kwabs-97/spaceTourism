@@ -102,7 +102,6 @@ ul li a {
 
   .pcNavContainer {
     display: flex;
-    
   }
   .pcNav {
     display: flex;
@@ -111,17 +110,17 @@ ul li a {
   .pcNav li {
     list-style: none;
     margin: 0 18px;
+  }
+  .pcNav .active {
+    border-bottom: 2px white solid;
     padding-bottom: 27px;
     padding-top: 15px;
-  }
-  .pcNav li:first-child {
-    border-bottom: 2px white solid;
   }
 
   .pcNavBackground {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
-    height: 9%;
+    height: 10%;
     width: 60%;
     position: absolute;
     top: 0;
@@ -129,18 +128,18 @@ ul li a {
   }
 }
 
-@media(min-width:1024px){
-.pcNavBackground{
-  height: 13%;
-  top: 6%;
-}
-.pcNav{
-  padding-right: 200px;
-}
-.pcNav li{
+@media (min-width: 1024px) {
+  .pcNavBackground {
+    height: 13%;
+    top: 6%;
+  }
+  .pcNav {
+    padding-right: px;
+  }
+  .pcNav li {
     margin: 0 25px;
-}
-.nav{
-  padding: 64px 55px ;
-}
+  }
+  .nav {
+    padding: 64px 55px;
+  }
 }

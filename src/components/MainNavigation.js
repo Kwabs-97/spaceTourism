@@ -63,16 +63,30 @@ function MainNavigation() {
           <div className={styles.pcNavBackground}></div>
           <ul className={styles.pcNav}>
             <li>
-              <NavLink to="/home">HOME</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? styles.active : styles)} to="/" end>
+                HOME
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/destination">DESTINATION</NavLink>
+              <NavLink
+                className={({ isActive }) => (isActive ? styles.active : styles)}
+                to="/destination"
+              >
+                DESTINATION
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/crew">CREW</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? styles.active : styles)} to="/crew">
+                CREW
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/technology">TECHNOLOGY</NavLink>
+              <NavLink
+                className={({ isActive }) => (isActive ? styles.active : styles)}
+                to="/technology"
+              >
+                TECHNOLOGY
+              </NavLink>
             </li>
           </ul>
         </div>
