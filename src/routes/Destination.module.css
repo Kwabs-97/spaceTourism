@@ -1,0 +1,52 @@
+/** @format */
+
+.background {
+  background: url("../assets/destination/background-destination-mobile.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header p {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.header span {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  opacity: 0.25;
+  margin: 0 18px;
+}
+
+.imgContainer{
+    padding: 32px 0 26px 0;
+
+}
+.links {
+    display: flex;
+}
+
