@@ -35,7 +35,7 @@ function MainNavigation() {
               <div className={styles.sidebarItemsContainer}>
                 <li>
                   {" "}
-                  <NavLink to="/home">
+                  <NavLink to="/">
                     <span>00</span>HOME
                   </NavLink>
                 </li>

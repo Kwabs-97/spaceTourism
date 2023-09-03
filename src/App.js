@@ -19,6 +19,10 @@ const router = createBrowserRouter([
         path: "/destination",
         element: <Destination />,
       },
+      {
+        path: "/destination/:planetName",
+        element: <Destination />,
+      },
     ],
   },
 ]);

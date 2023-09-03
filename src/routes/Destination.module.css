@@ -132,3 +132,127 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+.footer {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-top: 30px;
+    align-self: self-start;
+  }
+
+  .header p {
+    color: #fff;
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+  }
+
+  .header p span {
+    color: #fff;
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.375px;
+  }
+
+  .imgContainer img {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+
+  .links li a {
+    color: #fff;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+  }
+
+  .planetName p {
+    color: #fff;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .planetDescription p {
+    color: #d0d6f9;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+  }
+
+  .divider {
+    width: 573px;
+    height: 1px;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avgDistance {
+    padding-right: 50px;
+  }
+
+  .avgDistance span {
+    color: #d0d6f9;
+    text-align: center;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+  }
+  .avgDistance h3 {
+    color: #fff;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 12px;
+  }
+
+  .estTime h3 {
+    color: #fff;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+margin-top: 12px;
+  }
+
+  .estTime {
+    padding-left: 50px;
+  }
+}
