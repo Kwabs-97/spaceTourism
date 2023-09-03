@@ -178,11 +178,11 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 2.7px;
-    padding-bottom: 10px 
+    padding-bottom: 10px;
   }
 
-  .links li .active{
-    border-bottom:2px solid white;
+  .links li .active {
+    border-bottom: 2px solid white;
   }
 
   .planetName p {
@@ -194,6 +194,9 @@
     font-weight: 400;
     line-height: normal;
   }
+  .planetDescription {
+    max-width: 65%;
+  }
 
   .planetDescription p {
     color: #d0d6f9;
@@ -202,7 +205,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 175% */
+    line-height: 28px;
   }
 
   .divider {

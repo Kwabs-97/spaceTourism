@@ -11,6 +11,7 @@ import titanImg from "../assets/destination/image-titan.webp";
 function Destination() {
   const { planetName } = useParams();
 
+
   const planetContent = {
     moon: {
       name: "MOON",
@@ -62,6 +63,8 @@ function Destination() {
       },
     },
   };
+
+
 
   const planetData = planetContent[planetName];
 
