@@ -87,19 +87,41 @@ function Destination() {
             <ul className={styles.links}>
               <li>
                 {" "}
-                <NavLink to="/destination/moon">MOON</NavLink>
+                <NavLink
+                  end
+                  to="/destination/moon"
+                  className={({ isActive }) => (isActive ? styles.active : styles)}
+                >
+                  MOON
+                </NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/destination/mars"> MARS </NavLink>
+                <NavLink
+                  to="/destination/mars"
+                  className={({ isActive }) => (isActive ? styles.active : styles)}
+                >
+                  {" "}
+                  MARS{" "}
+                </NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/destination/europa">EUROPA</NavLink>
+                <NavLink
+                  to="/destination/europa"
+                  className={({ isActive }) => (isActive ? styles.active : styles)}
+                >
+                  EUROPA
+                </NavLink>
               </li>
               <li>
                 {" "}
-                <NavLink to="/destination/titan">TITAN</NavLink>
+                <NavLink
+                  to="/destination/titan"
+                  className={({ isActive }) => (isActive ? styles.active : styles)}
+                >
+                  TITAN
+                </NavLink>
               </li>
             </ul>
           </div>

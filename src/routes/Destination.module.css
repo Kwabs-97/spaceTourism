@@ -178,6 +178,11 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 2.7px;
+    padding-bottom: 10px 
+  }
+
+  .links li .active{
+    border-bottom:2px solid white;
   }
 
   .planetName p {
@@ -249,7 +254,7 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-margin-top: 12px;
+    margin-top: 12px;
   }
 
   .estTime {
