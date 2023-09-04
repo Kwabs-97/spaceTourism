@@ -40,3 +40,42 @@
   opacity: 0.25;
   margin: 0 18px;
 }
+
+@media (min-width: 768px) {
+  .background {
+    background: url("../assets/crew/background-crew-tablet.jpg") center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .header {
+    align-self: flex-start;
+    margin-top: 40px;
+  }
+
+  .header p {
+    color: #fff;
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+  }
+
+  .header p span {
+    color: #fff;
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.375px;
+  }
+}

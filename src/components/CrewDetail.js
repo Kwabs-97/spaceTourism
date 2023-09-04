@@ -3,11 +3,10 @@
 import React from "react";
 import styles from "./CrewDetail.module.css";
 import { NavLink } from "react-router-dom";
-import { GoDot, GoCircle } from "react-icons/go";
 
 function CrewDetail(props) {
   return (
-    <>
+    <div div className={styles.crewDetail}>
       <section className={styles.imgContainer}>
         <img
           src={props.imgSrc}
@@ -21,7 +20,7 @@ function CrewDetail(props) {
               ? styles.victorIMG
               : props.name === "ANOUSHEH ANSARI"
               ? styles.anoushehIMG
-              : styles
+              : styles.imgSrc
           }
         />
         <div className={styles.divider}></div>
@@ -62,7 +61,7 @@ function CrewDetail(props) {
           <p>{props.description}</p>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
