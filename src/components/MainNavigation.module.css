@@ -40,6 +40,10 @@ ul li a {
   align-items: center;
 }
 
+.toggled {
+  overflow: hidden;
+}
+
 .pcNavContainer {
   display: none;
 }
@@ -120,10 +124,10 @@ ul li a {
   .pcNavBackground {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
-    height: 10%;
+    height: 9%;
     width: 60%;
     position: absolute;
-    top: 0;
+    top: 1%;
     right: 0;
   }
 }
@@ -131,7 +135,7 @@ ul li a {
 @media (min-width: 1024px) {
   .pcNavBackground {
     height: 13%;
-    top: 6%;
+    top: 2%;
   }
   .pcNav {
     padding-right: px;
@@ -140,6 +144,6 @@ ul li a {
     margin: 0 25px;
   }
   .nav {
-    padding: 64px 55px;
+    padding: 20px 55px;
   }
 }

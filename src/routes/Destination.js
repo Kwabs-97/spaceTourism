@@ -11,7 +11,6 @@ import titanImg from "../assets/destination/image-titan.webp";
 function Destination() {
   const { planetName } = useParams();
 
-
   const planetContent = {
     moon: {
       name: "MOON",
@@ -64,8 +63,6 @@ function Destination() {
     },
   };
 
-
-
   const planetData = planetContent[planetName];
 
   if (!planetData) {
@@ -82,70 +79,73 @@ function Destination() {
             PICK YOUR DESTINATION
           </p>
         </div>
-        <div className={styles.imgContainer}>
-          <img src={planetData.imgSrc} alt={planetData.name} width={170} height={170} />
-        </div>
-        <section className={styles.about}>
-          <div className={styles.linksContainer}>
-            <ul className={styles.links}>
-              <li>
-                {" "}
-                <NavLink
-                  end
-                  to="/destination/moon"
-                  className={({ isActive }) => (isActive ? styles.active : styles)}
-                >
-                  MOON
-                </NavLink>
-              </li>
-              <li>
-                {" "}
-                <NavLink
-                  to="/destination/mars"
-                  className={({ isActive }) => (isActive ? styles.active : styles)}
-                >
+        <aside>
+          <div className={styles.imgContainer}>
+            <img src={planetData.imgSrc} alt={planetData.name} width={170} height={170} />
+          </div>
+          <section className={styles.about}>
+            <div className={styles.linksContainer}>
+              <ul className={styles.links}>
+                <li>
                   {" "}
-                  MARS{" "}
-                </NavLink>
-              </li>
-              <li>
-                {" "}
-                <NavLink
-                  to="/destination/europa"
-                  className={({ isActive }) => (isActive ? styles.active : styles)}
-                >
-                  EUROPA
-                </NavLink>
-              </li>
-              <li>
-                {" "}
-                <NavLink
-                  to="/destination/titan"
-                  className={({ isActive }) => (isActive ? styles.active : styles)}
-                >
-                  TITAN
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.planetName}>
-            <p> {planetData.name}</p>
-          </div>
-          <div className={styles.planetDescription}>
-            <p>{planetData.description}</p>
-          </div>
-        </section>
-        <div className={styles.divider}></div>
-        <footer className={styles.footer}>
-          <div className={styles.avgDistance}>
-            <span>AVG. DISTANCE</span>
-            <h3>{planetData.footer.distanceValue}</h3>
-          </div>
-          <div className={styles.estTime}>
-            <span>EST. TRAVEL TIME</span>
-            <h3>{planetData.footer.timeValue}</h3>
-          </div>
-        </footer>
+                  <NavLink
+                    end
+                    to="/destination/moon"
+                    className={({ isActive }) => (isActive ? styles.active : styles)}
+                  >
+                    MOON
+                  </NavLink>
+                </li>
+                <li>
+                  {" "}
+                  <NavLink
+                    to="/destination/mars"
+                    className={({ isActive }) => (isActive ? styles.active : styles)}
+                  >
+                    {" "}
+                    MARS{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  {" "}
+                  <NavLink
+                    to="/destination/europa"
+                    className={({ isActive }) => (isActive ? styles.active : styles)}
+                  >
+                    EUROPA
+                  </NavLink>
+                </li>
+                <li>
+                  {" "}
+                  <NavLink
+                    to="/destination/titan"
+                    className={({ isActive }) => (isActive ? styles.active : styles)}
+                  >
+                    TITAN
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.planetName}>
+              <p> {planetData.name}</p>
+            </div>
+            <div className={styles.planetDescription}>
+              <p>{planetData.description}</p>
+            </div>
+            <div className={styles.divider}></div>
+          </section>
+
+          <footer className={styles.footer}>
+            <div className={styles.avgDistance}>
+              <span>AVG. DISTANCE</span>
+              <h3>{planetData.footer.distanceValue}</h3>
+            </div>
+            <div className={styles.estTime}>
+              <span>EST. TRAVEL TIME</span>
+              <h3>{planetData.footer.timeValue}</h3>
+            </div>
+          </footer>
+        </aside>
       </main>
     </div>
   );

@@ -4,6 +4,8 @@ import RootLayout from "./routes/Root";
 import ErrorPage from "./routes/ErrorPage";
 import Destination from "./routes/Destination";
 import Home from "./routes/Home";
+import Crew from "./routes/Crew";
+import CrewDetail from "./components/CrewDetail";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "/destination/:planetName",
         element: <Destination />,
+      },
+      {
+        path: "/crew",
+        element: <Crew />,
+      },
+      {
+        path: "/crew/:crewName",
+        element: <Crew />,
       },
     ],
   },
