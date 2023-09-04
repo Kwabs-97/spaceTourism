@@ -79,3 +79,17 @@
     letter-spacing: 3.375px;
   }
 }
+
+@media (min-width: 1024px) {
+  .background {
+    background: url("../assets/crew/background-crew-desktop.jpg") center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

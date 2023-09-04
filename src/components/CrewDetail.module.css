@@ -159,9 +159,6 @@
     text-transform: uppercase;
   }
 
-  .about .description {
-    max-width: 81%;
-  }
   .about .description p {
     color: #d0d6f9;
     text-align: center;
@@ -209,5 +206,97 @@
 
   .divider {
     display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .crewDetail {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    margin: 0;
+  }
+  .about {
+    align-items: start;
+    padding: 0 50px;
+  }
+
+  .position {
+    align-self: self-start;
+  }
+
+  .about .position p {
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .about .name {
+    margin: 0;
+  }
+
+  .about .name p {
+    color: #fff;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .about .description p {
+    color: #d0d6f9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+  }
+  .description {
+    padding: 0;
+  }
+
+  .about .description p {
+    text-align: left;
+    padding-right: 40px;
+  }
+
+  .imgContainer {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+  }
+  .imgContainer .douglasIMG img {
+    width: 568.072px;
+    height: 712px;
+    flex-shrink: 0;
+  }
+
+  .imgContainer .markIMG img {
+    width: 453.44px;
+    height: 654px;
+    flex-shrink: 0;
+  }
+
+  .imgContainer .victorIMG img {
+    width: 554.388px;
+    height: 681px;
+    flex-shrink: 0;
+  }
+
+  .imgContainer .anoushehIMG img {
+    width: 554.388px;
+    height: 681px;
+    flex-shrink: 0;
+  }
+  .navLinks {
+    align-self: self-start;
+    justify-self: self-start;
+    padding: 0 50px;
   }
 }

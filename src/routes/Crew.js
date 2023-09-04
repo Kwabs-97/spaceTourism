@@ -46,7 +46,7 @@ function Crew() {
   };
 
   const crewData = crewContent[crewName];
-  console.log(crewData);
+  
   return (
     <div className={styles.crewContainer}>
       <div className={styles.crew}>
