@@ -13,13 +13,6 @@ import anoushehIMG from "../assets/crew/image-anousheh-ansari.webp";
 function Crew() {
   const { crewName } = useParams();
 
-  const douglasContent = {
-    imgSrc: douglasIMG,
-    position: "COMMANDER",
-    name: "DOUGLAS HURLEY",
-    description:
-      " Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
-  };
 
   const crewContent = {
     douglas: {
