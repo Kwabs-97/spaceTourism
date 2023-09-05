@@ -40,3 +40,14 @@
   opacity: 0.25;
   margin: 0 18px;
 }
+
+@media (min-width: 768px) {
+  .header {
+    margin-top: 42px;
+    align-self: self-start;
+  }
+
+  .background {
+    background: url("../assets/technology/background-technology-tablet.jpg") center;
+  }
+}

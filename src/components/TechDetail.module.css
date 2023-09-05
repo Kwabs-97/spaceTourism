@@ -27,7 +27,7 @@ body {
 .navLinks {
   display: flex;
   justify-content: center;
-  
+  margin-bottom: 16px;
 }
 
 .navLinks a {
@@ -48,4 +48,59 @@ body {
 .navLinks .active {
   color: white;
   background-color: white;
+}
+
+.navLinks .active + p {
+  color: black;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .heading p {
+  color: #d0d6f9;
+  text-align: center;
+  font-family: Barlow Condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+}
+
+.title {
+  margin-bottom: 16px;
+  margin-top: 9px;
+}
+.title p {
+  color: #fff;
+  text-align: center;
+  font-family: Bellefair;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.description {
+  width: 327px;
+}
+
+.description p {
+  color: #d0d6f9;
+  text-align: center;
+  font-family: Barlow;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  text-align: center;
+}
+
+@media(min-width:768px){
+    
 }

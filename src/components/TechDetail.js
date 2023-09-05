@@ -25,7 +25,7 @@ function TechDetail(props) {
       </section>
       <section className={styles.navLinks}>
         <NavLink
-          to="/tech/vehicle"
+          to="/technology/vehicle"
           className={({ isActive }) => (isActive ? styles.active : styles)}
         >
           {" "}
@@ -33,19 +33,32 @@ function TechDetail(props) {
         </NavLink>
         {/* </div> */}
 
-        <NavLink to="/tech/port" className={({ isActive }) => (isActive ? styles.active : styles)}>
+        <NavLink
+          to="/technology/port"
+          className={({ isActive }) => (isActive ? styles.active : styles)}
+        >
           <p>2</p>
         </NavLink>
 
         <NavLink
-          to="/tech/capsule"
+          to="/technology/capsule"
           className={({ isActive }) => (isActive ? styles.active : styles)}
         >
           <p>3</p>
         </NavLink>
       </section>
 
-      <section></section>
+      <section className={styles.about}>
+        <div className={styles.heading}>
+          <p>THE TERMINOLOGY ...</p>
+        </div>
+        <div className={styles.title}>
+          <p>{props.title}</p>
+        </div>
+        <div className={styles.description}>
+          <p>{props.about}</p>
+        </div>
+      </section>
     </div>
   );
 }
