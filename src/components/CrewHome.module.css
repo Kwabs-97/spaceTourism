@@ -252,12 +252,25 @@
 }
 
 @media (min-width: 1024px) {
+  .background {
+    background: url("../assets/crew/background-crew-desktop.jpg") center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+
   .crew {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     justify-content: start;
     margin: 0;
+    margin-top: 10px;
   }
 
   .about {
@@ -290,11 +303,12 @@
     line-height: 32px; /* 177.778% */
     text-align: left;
   }
-  .position {
+
+  .about .position {
     align-self: self-start;
   }
 
-  .position p {
+  .about .position p {
     font-family: Bellefair;
     font-size: 32px;
     font-style: normal;
@@ -303,5 +317,19 @@
     text-transform: uppercase;
     width: 444px;
     text-align: left;
+  }
+  .description {
+    padding: 0;
+  }
+  .imgContainer {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+  }
+  .navLinks {
+    justify-self: self-start;
+    padding-left: 50px;
+    margin: 0;
+    padding-top: 78px;
   }
 }
