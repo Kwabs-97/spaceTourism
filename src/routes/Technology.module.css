@@ -1,0 +1,42 @@
+/** @format */
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.background {
+  background: url("../assets/technology/background-technology-mobile.jpg") center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header p {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.header span {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  opacity: 0.25;
+  margin: 0 18px;
+}

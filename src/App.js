@@ -6,6 +6,7 @@ import Destination from "./routes/Destination";
 import Home from "./routes/Home";
 import Crew from "./routes/Crew";
 import CrewHome from "./components/CrewHome";
+import Technology from "./routes/Technology";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/crew/:crewName",
         element: <Crew />,
+      },
+      {
+        path: "/technology",
+        element: <Technology />,
+      },
+      {
+        path: "/technology/:techName",
+        element: <Technology />,
       },
     ],
   },

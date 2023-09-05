@@ -1,0 +1,24 @@
+body {
+  overflow: hidden;
+}
+.techDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.imgContainer img {
+  width: 375px;
+  height: 170px;
+  flex-shrink: 0;
+}
