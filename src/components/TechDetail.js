@@ -3,6 +3,7 @@
 import styles from "./TechDetail.module.css";
 
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function TechDetail(props) {
   return (
@@ -22,7 +23,27 @@ function TechDetail(props) {
           }
         />
       </section>
-      <section></section>
+      <section className={styles.navLinks}>
+        <NavLink
+          to="/tech/vehicle"
+          className={({ isActive }) => (isActive ? styles.active : styles)}
+        >
+          {" "}
+          <p>1</p>
+        </NavLink>
+        {/* </div> */}
+
+        <NavLink to="/tech/port" className={({ isActive }) => (isActive ? styles.active : styles)}>
+          <p>2</p>
+        </NavLink>
+
+        <NavLink
+          to="/tech/capsule"
+          className={({ isActive }) => (isActive ? styles.active : styles)}
+        >
+          <p>3</p>
+        </NavLink>
+      </section>
 
       <section></section>
     </div>
