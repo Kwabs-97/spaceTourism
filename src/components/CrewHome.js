@@ -15,16 +15,20 @@ function CrewHome() {
 
   return (
     <div className={styles.crewContainer}>
-      <div className={styles.crew}>
+      <header className={styles.header}>
         <div className={styles.background}></div>
-        <header className={styles.header}>
-          <p>
-            <span>02</span>
-            MEET YOUR CREW
-          </p>
-        </header>
+        <p>
+          <span>02</span>
+          MEET YOUR CREW
+        </p>
+      </header>
+      <div className={styles.crew}>
         <section className={styles.imgContainer}>
-          <img src={douglasContent.imgSrc} alt={douglasContent.name} className={styles.douglasIMG} />
+          <img
+            src={douglasContent.imgSrc}
+            alt={douglasContent.name}
+            className={styles.douglasIMG}
+          />
           <div className={styles.divider}></div>
         </section>
 

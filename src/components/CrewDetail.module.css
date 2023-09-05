@@ -1,5 +1,7 @@
 /** @format */
-
+body {
+  overflow: hidden;
+}
 .crewDetail {
   display: flex;
   flex-direction: column;
@@ -131,6 +133,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
 
   .about .position p {
@@ -159,6 +162,11 @@
     text-transform: uppercase;
   }
 
+  .about .description {
+    max-width: 90%;
+    padding: 0;
+  }
+
   .about .description p {
     color: #d0d6f9;
     text-align: center;
@@ -173,34 +181,35 @@
     grid-row-end: 3;
     align-items: center;
     justify-content: center;
-    margin: 15px;
+    margin: 23px;
   }
 
   .imgContainer {
     margin: 16px 0 0 0;
+    overflow: hidden;
   }
 
   .imgContainer .douglasIMG {
     width: 456.372px;
-    height: 532px;
+    height: 565px;
     flex-shrink: 0;
   }
 
   .imgContainer .markIMG {
     width: 368.853px;
-    height: 532px;
+    height: 560px;
     flex-shrink: 0;
   }
 
   .imgContainer .victorIMG {
     width: 433.09px;
-    height: 532px;
+    height: 560px;
     flex-shrink: 0;
   }
 
   .imgContainer .anoushehIMG {
     width: 539.508px;
-    height: 532px;
+    height: 560px;
     flex-shrink: 0;
   }
 
@@ -219,7 +228,9 @@
   }
   .about {
     align-items: start;
-    padding: 0 50px;
+    text-align: left;
+    margin-left: 50px;
+    width: 100%;
   }
 
   .position {
@@ -233,6 +244,8 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    width: 444px;
+    text-align: left;
   }
 
   .about .name {
@@ -263,7 +276,6 @@
 
   .about .description p {
     text-align: left;
-    padding-right: 40px;
   }
 
   .imgContainer {
@@ -295,8 +307,9 @@
     flex-shrink: 0;
   }
   .navLinks {
-    align-self: self-start;
+   
     justify-self: self-start;
-    padding: 0 50px;
+    padding-left: 50px;
+    margin: 0;
   }
 }

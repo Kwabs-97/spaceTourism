@@ -150,25 +150,41 @@
     z-index: -1;
   }
 
-
   .crew {
     display: grid;
     grid-template-rows: auto auto auto;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
-  .header {
-    grid-row-start: 1;
-    grid-row-end: 2;
+  .header p {
+    color: #fff;
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+  }
+
+  .header p span {
+    color: #fff;
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.375px;
   }
 
   .about {
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 46px;
   }
 
   .about .position p {
@@ -197,6 +213,10 @@
     text-transform: uppercase;
   }
 
+  .about .description {
+    max-width: 89%;
+    padding: 0;
+  }
   .about .description p {
     color: #d0d6f9;
     text-align: center;
@@ -216,29 +236,13 @@
 
   .imgContainer {
     margin: 16px 0 0 0;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 
-  .imgContainer .douglasIMG {
+  .crew .imgContainer img {
     width: 456.372px;
-    height: 532px;
-    flex-shrink: 0;
-  }
-
-  .imgContainer .markIMG {
-    width: 368.853px;
-    height: 532px;
-    flex-shrink: 0;
-  }
-
-  .imgContainer .victorIMG {
-    width: 433.09px;
-    height: 532px;
-    flex-shrink: 0;
-  }
-
-  .imgContainer .anoushehIMG {
-    width: 539.508px;
-    height: 532px;
+    height: 565px;
     flex-shrink: 0;
   }
 
