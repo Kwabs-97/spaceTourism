@@ -269,14 +269,13 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 177.778% */
+    text-align: left;
   }
   .description {
     padding: 0;
   }
 
-  .about .description p {
-    text-align: left;
-  }
+ 
 
   .imgContainer {
     grid-row-start: 1;
@@ -307,7 +306,6 @@ body {
     flex-shrink: 0;
   }
   .navLinks {
-   
     justify-self: self-start;
     padding-left: 50px;
     margin: 0;

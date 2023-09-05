@@ -250,3 +250,58 @@
     display: none;
   }
 }
+
+@media (min-width: 1024px) {
+  .crew {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    margin: 0;
+  }
+
+  .about {
+    align-items: start;
+    text-align: left;
+    margin-left: 50px;
+    width: 100%;
+  }
+
+  .about .name {
+    margin: 0;
+  }
+
+  .about .name p {
+    color: #fff;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .about .description p {
+    color: #d0d6f9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    text-align: left;
+  }
+  .position {
+    align-self: self-start;
+  }
+
+  .position p {
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 444px;
+    text-align: left;
+  }
+}
