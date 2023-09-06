@@ -8,6 +8,7 @@ import Crew from "./routes/Crew";
 import CrewHome from "./components/CrewHome";
 import Technology from "./routes/Technology";
 import TechnologHome from "./components/TechnologHome";
+import DestinationHome from "./components/DestinationHome";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/destination/",
-        element: <Destination />,
+        element: <DestinationHome />,
       },
       {
         path: "/destination/:planetName",
