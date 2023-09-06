@@ -7,6 +7,7 @@ import Home from "./routes/Home";
 import Crew from "./routes/Crew";
 import CrewHome from "./components/CrewHome";
 import Technology from "./routes/Technology";
+import TechnologHome from "./components/TechnologHome";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/technology",
-        element: <Technology />,
+        element: <TechnologHome />,
       },
       {
         path: "/technology/:techName",
