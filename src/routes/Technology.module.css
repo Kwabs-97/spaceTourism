@@ -49,5 +49,27 @@
 
   .background {
     background: url("../assets/technology/background-technology-tablet.jpg") center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1024) {
+  .background {
+    background: url("../assets/technology/background-technology-desktop.jpg") center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
   }
 }
