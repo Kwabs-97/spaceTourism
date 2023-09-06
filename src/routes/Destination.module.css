@@ -77,7 +77,6 @@
 }
 .planetName {
   margin-top: 20px;
-  
 }
 .planetName p {
   color: #fff;
@@ -159,7 +158,8 @@ aside {
 
 @media (min-width: 768px) {
   .header {
-    margin-top: 30px;
+    margin-top: 100px;
+    margin-left: 200px;
     align-self: self-start;
   }
 
@@ -274,11 +274,13 @@ aside {
   .destination {
     overflow-y: hidden;
   }
+
   aside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
   }
 
   aside .about {
