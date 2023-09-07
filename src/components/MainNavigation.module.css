@@ -33,6 +33,11 @@ ul li a {
   letter-spacing: 2.7px;
 }
 
+ul li :hover {
+  box-shadow: 0 0 5px #d0d6f9, 0 0 5px #d0d6f9, 0 0 5px #d0d6f9, 0 0 5px #d0d6f9, 0 0 5px #d0d6f9;
+  transition: ease-in-out 00ms
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
