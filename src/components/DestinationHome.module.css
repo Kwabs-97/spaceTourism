@@ -281,6 +281,27 @@ aside {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    transition: all ease 1s;
+  }
+
+  .imgContainer {
+    transition: all ease 500ms;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .imgContainer img {
+    animation: spin 15s linear infinite;
+  }
+  aside:hover {
+    transition: ease-in-out 500ms;
+    transform: scale(1.05);
   }
 
   aside .about {
@@ -322,4 +343,3 @@ aside {
     text-align: left;
   }
 }
-    
