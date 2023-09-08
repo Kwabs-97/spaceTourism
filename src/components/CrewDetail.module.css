@@ -16,6 +16,12 @@ body {
   margin: 32px 0;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .imgContainer {
   display: flex;
   flex-direction: column;
@@ -47,12 +53,15 @@ body {
   margin: 0 5px;
 }
 
-.navLinks .active {
+.navLinks a:hover {
   color: white;
   background-color: white;
 }
 
-
+.navLinks .active {
+  color: white;
+  background-color: white;
+}
 
 .imgContainer .douglasIMG {
   width: 177.123px;
@@ -122,103 +131,103 @@ body {
 }
 
 @media (min-width: 768px) {
-  .crewDetail {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    margin-top: 30px;
-  }
+    .crewDetail {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      margin-top: 30px;
+    }
 
-  .about {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-  }
+    .about {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
 
-  .about .position p {
-    color: #ffffff5a;
-    text-align: center;
-    font-family: Bellefair;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-  }
+    .about .position p {
+      color: #ffffff5a;
+      text-align: center;
+      font-family: Bellefair;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
 
-  .about .name {
-    margin: 8px 16px 0;
-  }
+    .about .name {
+      margin: 8px 16px 0;
+    }
 
-  .about .name p {
-    color: #fff;
-    text-align: center;
-    font-family: Bellefair;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-  }
+    .about .name p {
+      color: #fff;
+      text-align: center;
+      font-family: Bellefair;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
 
-  .about .description {
-    max-width: 90%;
-    padding: 0;
-  }
+    .about .description {
+      max-width: 90%;
+      padding: 0;
+    }
 
-  .about .description p {
-    color: #d0d6f9;
-    text-align: center;
-    font-family: Barlow;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px; /* 175% */
-  }
-  .navLinks {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    align-items: center;
-    justify-content: center;
-    margin: 23px;
-  }
+    .about .description p {
+      color: #d0d6f9;
+      text-align: center;
+      font-family: Barlow;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+    }
+    .navLinks {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      align-items: center;
+      justify-content: center;
+      margin: 23px;
+    }
 
-  .imgContainer {
-    margin: 16px 0 0 0;
-    overflow: hidden;
-  }
+    .imgContainer {
+      margin: 16px 0 0 0;
+      overflow: hidden;
+    }
 
-  .imgContainer .douglasIMG {
-    width: 456.372px;
-    height: 565px;
-    flex-shrink: 0;
-  }
+    .imgContainer .douglasIMG {
+      width: 456.372px;
+      height: 565px;
+      flex-shrink: 0;
+    }
 
-  .imgContainer .markIMG {
-    width: 368.853px;
-    height: 560px;
-    flex-shrink: 0;
-  }
+    .imgContainer .markIMG {
+      width: 368.853px;
+      height: 560px;
+      flex-shrink: 0;
+    }
 
-  .imgContainer .victorIMG {
-    width: 433.09px;
-    height: 560px;
-    flex-shrink: 0;
-  }
+    .imgContainer .victorIMG {
+      width: 433.09px;
+      height: 560px;
+      flex-shrink: 0;
+    }
 
-  .imgContainer .anoushehIMG {
-    width: 539.508px;
-    height: 560px;
-    flex-shrink: 0;
-  }
+    .imgContainer .anoushehIMG {
+      width: 539.508px;
+      height: 560px;
+      flex-shrink: 0;
+    }
 
-  .divider {
-    display: none;
+    .divider {
+      display: none;
+    }
   }
-}
 
 @media (min-width: 1024px) {
   .crewDetail {
@@ -227,11 +236,24 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: start;
     margin: 0;
+    gap: 100px;
+    margin: 0 100px;
   }
+
+  .main {
+    flex-direction: column-reverse;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-content: start;
+    align-items: start;
+  }
+
   .about {
+    display: flex;
     align-items: start;
     text-align: left;
-    margin-left: 50px;
+    justify-content: space-between;
+
     width: 100%;
   }
 
@@ -246,12 +268,13 @@ body {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    width: 444px;
+
     text-align: left;
   }
 
   .about .name {
     margin: 0;
+    white-space: nowrap;
   }
 
   .about .name p {
@@ -307,7 +330,10 @@ body {
   }
   .navLinks {
     justify-self: self-start;
+    align-self: flex-start;
     padding-left: 50px;
-    margin: 0;
+    margin-top: 120px;
+    margin-left: 0px;
+    padding: 0;
   }
 }

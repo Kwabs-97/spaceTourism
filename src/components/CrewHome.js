@@ -15,57 +15,60 @@ function CrewHome() {
 
   return (
     <div className={styles.crewContainer}>
-      <header className={styles.header}>
-        <div className={styles.background}></div>
-        <p>
-          <span>02</span>
-          MEET YOUR CREW
-        </p>
-      </header>
       <div className={styles.crew}>
-        <section className={styles.imgContainer}>
-          <img
-            src={douglasContent.imgSrc}
-            alt={douglasContent.name}
-            className={styles.douglasIMG}
-          />
-          <div className={styles.divider}></div>
-        </section>
+        <div className={styles.background}></div>
+        <header className={styles.header}>
+          <p>
+            <span>02</span>
+            MEET YOUR CREW
+          </p>
+        </header>
 
-       
-        <section className={styles.navLinks}>
-          <NavLink
-            to="/crew/"
-            className={({ isActive }) => (isActive ? styles.active : styles)}
-          ></NavLink>
+        <div div className={styles.crewDetail}>
+          <section className={styles.imgContainer}>
+            <img src={douglasContent.imgSrc} alt={douglasContent.name} />
+            <div className={styles.divider}></div>
+          </section>
 
-          <NavLink
-            to="/crew/mark/"
-            className={({ isActive }) => (isActive ? styles.active : styles)}
-          ></NavLink>
+          <section className={styles.main}>
+            <section className={styles.navLinks}>
+              {/* <div className={styles.navLinkIcon}> */}
+              <NavLink
+                to="/crew/douglas/"
+                className={({ isActive }) => (isActive ? styles.active : styles)}
+              ></NavLink>
+              {/* </div> */}
 
-          <NavLink
-            to="/crew/victor/"
-            className={({ isActive }) => (isActive ? styles.active : styles)}
-          ></NavLink>
+              <NavLink
+                to="/crew/mark/"
+                className={({ isActive }) => (isActive ? styles.active : styles)}
+              ></NavLink>
 
-          <NavLink
-            to="/crew/anousheh"
-            className={({ isActive }) => (isActive ? styles.active : styles)}
-          ></NavLink>
-        </section>
-        <section className={styles.about}>
-          <div className={styles.position}>
-            <p>{douglasContent.position}</p>
-          </div>
-          <div className={styles.name}>
-            {" "}
-            <p>{douglasContent.name}</p>
-          </div>
-          <div className={styles.description}>
-            <p>{douglasContent.description}</p>
-          </div>
-        </section>
+              <NavLink
+                to="/crew/victor/"
+                className={({ isActive }) => (isActive ? styles.active : styles)}
+              ></NavLink>
+
+              <NavLink
+                to="/crew/anousheh"
+                className={({ isActive }) => (isActive ? styles.active : styles)}
+              ></NavLink>
+            </section>
+
+            <section className={styles.about}>
+              <div className={styles.position}>
+                <p>{douglasContent.position}</p>
+              </div>
+              <div className={styles.name}>
+                {" "}
+                <p>{douglasContent.name}</p>
+              </div>
+              <div className={styles.description}>
+                <p>{douglasContent.description}</p>
+              </div>
+            </section>
+          </section>
+        </div>
       </div>
     </div>
   );

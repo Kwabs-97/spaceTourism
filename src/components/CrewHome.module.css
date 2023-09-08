@@ -41,14 +41,24 @@
   margin: 0 18px;
 }
 
-/** @format */
-
+.crewDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .divider {
   width: 327px;
   height: 1px;
   flex-shrink: 0;
   background: #383b4b;
   margin: 32px 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .imgContainer {
@@ -71,6 +81,7 @@
 
 .navLinks {
   display: flex;
+  transition: all ease 1s;
 }
 
 .navLinks a {
@@ -80,6 +91,12 @@
   width: 10px;
   height: 10px;
   margin: 0 5px;
+}
+
+.navLinks a:hover {
+  color: white;
+  background-color: white;
+  transition: ease-in-out 500ms;
 }
 
 .navLinks .active {
@@ -93,12 +110,29 @@
   flex-shrink: 0;
 }
 
+.imgContainer .markIMG {
+  width: 153.92px;
+  height: 222px;
+  flex-shrink: 0;
+}
+
+.imgContainer .victorIMG {
+  width: 180.726px;
+  height: 222px;
+  flex-shrink: 0;
+}
+
+.imgContainer .anoushehIMG {
+  width: 226.147px;
+  height: 223px;
+  flex-shrink: 0;
+}
 .about {
   margin: 16px 0;
 }
 
 .about .position p {
-  color: #ffffff7b;
+  color: #ffffff5a;
   text-align: center;
   font-family: Bellefair;
   font-size: 16px;
@@ -136,7 +170,6 @@
   font-weight: 400;
   line-height: 25px; /* 166.667% */
 }
-
 @media (min-width: 768px) {
   .background {
     background: url("../assets/crew/background-crew-tablet.jpg") center;
@@ -149,11 +182,9 @@
     left: 0;
     z-index: -1;
   }
-
-  .crew {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    margin-top: 15px;
+  .header {
+    align-self: flex-start;
+    margin-top: 40px;
   }
 
   .header p {
@@ -177,6 +208,12 @@
     letter-spacing: 3.375px;
   }
 
+  .crewDetail {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-top: 30px;
+  }
+
   .about {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -184,7 +221,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 46px;
+    margin: 0;
   }
 
   .about .position p {
@@ -214,9 +251,10 @@
   }
 
   .about .description {
-    max-width: 89%;
+    max-width: 90%;
     padding: 0;
   }
+
   .about .description p {
     color: #d0d6f9;
     text-align: center;
@@ -231,18 +269,35 @@
     grid-row-end: 3;
     align-items: center;
     justify-content: center;
-    margin: 15px;
+    margin: 23px;
   }
 
   .imgContainer {
     margin: 16px 0 0 0;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    overflow: hidden;
   }
 
-  .crew .imgContainer img {
+  .imgContainer .douglasIMG {
     width: 456.372px;
     height: 565px;
+    flex-shrink: 0;
+  }
+
+  .imgContainer .markIMG {
+    width: 368.853px;
+    height: 560px;
+    flex-shrink: 0;
+  }
+
+  .imgContainer .victorIMG {
+    width: 433.09px;
+    height: 560px;
+    flex-shrink: 0;
+  }
+
+  .imgContainer .anoushehIMG {
+    width: 539.508px;
+    height: 560px;
     flex-shrink: 0;
   }
 
@@ -264,24 +319,53 @@
     z-index: -1;
   }
 
-  .crew {
+  .header {
+    padding-left: 50px;
+  }
+  .crewDetail {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     justify-content: start;
     margin: 0;
-    margin-top: 10px;
+    gap: 100px;
+    margin: 0 100px;
+  }
+  .main {
+    flex-direction: column-reverse;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-content: start;
+    align-items: start;
   }
 
   .about {
+    display: flex;
     align-items: start;
     text-align: left;
-    margin-left: 50px;
+    justify-content: space-between;
+
     width: 100%;
+  }
+
+  .position {
+    align-self: self-start;
+  }
+
+  .about .position p {
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    text-align: left;
   }
 
   .about .name {
     margin: 0;
+    white-space: nowrap;
   }
 
   .about .name p {
@@ -303,33 +387,24 @@
     line-height: 32px; /* 177.778% */
     text-align: left;
   }
-
-  .about .position {
-    align-self: self-start;
-  }
-
-  .about .position p {
-    font-family: Bellefair;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    width: 444px;
-    text-align: left;
-  }
-  .description {
-    padding: 0;
-  }
   .imgContainer {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
   }
+
+  .imgContainer img {
+    width: 456.372px;
+    height: 565px;
+    flex-shrink: 0;
+  }
+
   .navLinks {
     justify-self: self-start;
+    align-self: flex-start;
     padding-left: 50px;
-    margin: 0;
-    padding-top: 78px;
+    margin-top: 120px;
+    margin-left: 0px;
+    padding: 0;
   }
 }

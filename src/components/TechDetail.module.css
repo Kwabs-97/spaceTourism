@@ -53,12 +53,12 @@
 
 .navLinks a:hover {
   background-color: white;
+  transition: background-color ease-in-out 400ms;
 }
 
-.navLinks a:hover p{
+.navLinks a:hover p {
   color: black;
 }
-
 
 .about {
   display: flex;
