@@ -47,6 +47,10 @@
   background-color: white;
 }
 
+.navLinks p{
+  color: white;
+}
+
 .navLinks .active p {
   color: black;
 }
