@@ -23,10 +23,6 @@
 .imgContainer img {
   animation: spin 15s linear infinite;
 }
-aside:hover {
-  transition: ease-in-out 500ms;
-  transform: scale(1.03);
-} 
 
 .destination {
   display: flex;
@@ -79,6 +75,12 @@ aside:hover {
 
 .links li {
   padding: 0 13px;
+  transition: all ease 1s;
+}
+
+.links li:hover {
+  transition: ease-in-out 500ms;
+  transform: scale(1.15);
 }
 .links li a {
   font-size: 16px;
@@ -174,7 +176,7 @@ aside {
 
 @media (min-width: 768px) {
   .header {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 200px;
     align-self: self-start;
   }

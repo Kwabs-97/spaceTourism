@@ -293,7 +293,7 @@ aside {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
     transition: all ease 1s;
   }
 
@@ -301,10 +301,10 @@ aside {
     transition: all ease 500ms;
   }
 
-  aside:hover {
+  /* aside:hover {
     transition: ease-in-out 500ms;
-    transform: scale(1.05);
-  }
+    transform: scale(1.01);
+  } */
 
   aside .about {
     align-items: start;
