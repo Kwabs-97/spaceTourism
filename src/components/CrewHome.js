@@ -32,6 +32,7 @@ function CrewHome() {
           <div className={styles.divider}></div>
         </section>
 
+       
         <section className={styles.navLinks}>
           <NavLink
             to="/crew/"

@@ -34,10 +34,16 @@ ul li a {
 }
 
 ul li :hover {
-  box-shadow: 0 0 5px #d0d6f9, 0 0 5px #d0d6f9, 0 0 5px #d0d6f9, 0 0 5px #d0d6f9, 0 0 5px #d0d6f9;
+  box-shadow: 0 0 5px #6febdfda;
   transition: ease-in-out 200ms;
   border-radius: 10%;
+  transition: all ease 300ms;
+
   /* padding: 5px; */
+}
+ul li a :hover {
+  transition: ease-in-out 500ms;
+  transform: scale(1.5);
 }
 
 .nav {

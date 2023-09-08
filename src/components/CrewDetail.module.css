@@ -52,6 +52,8 @@ body {
   background-color: white;
 }
 
+
+
 .imgContainer .douglasIMG {
   width: 177.123px;
   height: 222px;
@@ -274,8 +276,6 @@ body {
   .description {
     padding: 0;
   }
-
- 
 
   .imgContainer {
     grid-row-start: 1;

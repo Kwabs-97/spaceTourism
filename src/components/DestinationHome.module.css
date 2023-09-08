@@ -298,6 +298,7 @@ aside {
   }
   .imgContainer img {
     animation: spin 15s linear infinite;
+    transition: ease-in-out 500ms;
   }
   aside:hover {
     transition: ease-in-out 500ms;

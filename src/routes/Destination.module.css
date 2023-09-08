@@ -12,6 +12,22 @@
   z-index: -1;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.imgContainer img {
+  animation: spin 15s linear infinite;
+}
+aside:hover {
+  transition: ease-in-out 500ms;
+  transform: scale(1.03);
+} 
+
 .destination {
   display: flex;
   flex-direction: column;
@@ -284,20 +300,8 @@ aside {
     transition: all ease 1s;
   }
 
-  .imgContainer{
+  .imgContainer {
     transition: all ease 500ms;
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-  }
-.imgContainer img{
-  animation: spin 15s linear infinite;
-}
-  aside:hover {
-    transition:  ease-in-out 500ms;
-    transform: scale(1.03);
   }
 
   aside .about {
