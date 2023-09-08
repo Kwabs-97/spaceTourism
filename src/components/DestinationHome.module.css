@@ -171,7 +171,7 @@ aside {
 
 @media (min-width: 768px) {
   .header {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 200px;
     align-self: self-start;
   }
@@ -293,7 +293,7 @@ aside {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     transition: all ease 1s;
   }
 
